@@ -1,0 +1,373 @@
+:root {
+    --font-heading: 'Anton', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --warm-bg: #f6f1eb;
+    --page-bg: #1C1C1C;
+    --warm-dark: #1c1a18;
+    --accent-red: #c62828;
+    --accent-gold: #d4a373;
+}
+
+/* Basic Reset */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    background: var(--page-bg);
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Container Styling */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+    min-height: 25px;
+    position: sticky;
+    /* Add this line */
+    top: 0;
+    /* Add this line to fix the positioning */
+    z-index: 4;
+    height: 72px;
+    background-color: var(--warm-bg);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* .logo-wrapper {
+    background-color: transparent;
+} */
+
+.logo img {
+    width: 80px;
+    margin-top: 10px;
+}
+
+.menu,
+.lunch,
+.table,
+.logo {
+    margin-left: 45px;
+    margin-right: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #2b2a28;
+    font-family: var(--font-heading);
+    letter-spacing: 0.15em;
+
+}
+
+.menu:hover,
+.lunch:hover,
+.table:hover {
+    color: #c0392b;
+    /* Darker color on hover */
+}
+
+.hero {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: var(--warm-bg);
+    text-align: center;
+
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-top: 5rem;
+    font-family: var(--font-heading);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: clamp(3rem, 6vw, 5rem);
+    color: var(--warm-bg);
+}
+
+@media (min-width: 1024px) {
+    .hero-content {
+        text-align: left;
+        margin-left: 10%;
+        margin-right: auto;
+    }
+
+    .hero h1::after {
+        margin-left: 0;
+    }
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    font-family: var(--font-body);
+    color: #e6dfd7;
+}
+
+.hero video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    filter:
+        brightness(0.8) contrast(1.2) saturate(1.3) sepia(0.15);
+
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            rgba(60, 35, 20, 0.40),
+            rgba(30, 20, 15, 0.45));
+    z-index: 1;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* Content Area Styling */
+.content {
+    background: #b9000000;
+    padding: 6rem 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .stripe-inner {
+        padding: 3rem 2rem;
+    }
+
+    .stripe-inner h2 {
+        font-size: 2.2rem;
+    }
+}
+
+.cta {
+    background: var(--accent-red);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+
+    padding: 0.9rem 1.6rem;
+    font-family: var(--font-heading);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.cta:hover {
+    background: #a91f1f;
+    transform: translateY(-1px);
+}
+
+.cta a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Footer Styling */
+#footer {
+    background-color: var(--page-bg);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.menu-master {
+    font-family: var(--font-heading);
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 3rem;
+    color: var(--warm-bg);
+}
+
+.food-info {
+    display: flex;
+    margin-bottom: 5rem;
+    justify-content: space-around;
+    color: var(--warm-bg);
+}
+
+.food-info-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    max-width: 450px;
+}
+
+.food-info-column p {
+    margin-top: 1rem;
+    width: 15rem;
+    font-family: var(--font-body);
+    text-align: center;
+}
+
+.menu-master-section {
+    background-color: var(--warm-bg);
+}
+
+.menu-section {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 4rem;
+    padding: 2rem;
+    text-align: left;
+    margin-bottom: 4rem;
+    /* Default to left alignment for all sections */
+}
+
+.menu-section.center {
+    text-align: center;
+}
+
+.menu-header-one {
+    font-family: var(--font-heading)
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: var(--font-heading)
+}
+
+.menu-item {
+    margin-bottom: 1.5rem;
+}
+
+.menu-item p {
+    font-family: var(--font-body)
+}
+
+.price {
+    font-weight: bold;
+    color: var(--accent-red);
+}
+
+.rule-line {
+    width: 80px;
+    margin: 1rem 0 2rem;
+    border-top: 2px dashed var(--accent-gold);
+}
+
+.icon-container {
+    max-width: 230px;
+}
+
+.icon-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+    border-radius: 8px;
+    border: 1px solid rgba(28, 26, 24, 0.06);
+
+    box-shadow:
+        0 12px 20px rgba(28, 26, 24, 0.12),
+        0 2px 4px rgba(28, 26, 24, 0.08);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-container img:hover {
+    transform: scale(1.05) translateY(-4px);
+
+    box-shadow:
+        0 20px 30px rgba(28, 26, 24, 0.18),
+        0 6px 10px rgba(28, 26, 24, 0.12);
+}
+
+.opening-hours {
+    background-color: var(--page-bg);
+    color: white;
+    text-align: center;
+}
+
+.opening-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: var(--font-body);
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.hours-list {
+    margin-top: 40px;
+}
+
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-family: var(--font-body);
+    font-size: 18px;
+}
+
+.day {
+    font-weight: 500;
+}
+
+.time {
+    font-weight: 600;
+}
+
+.hours-note {
+    margin-top: 30px;
+    font-size: 14px;
+    opacity: 0.7;
+}

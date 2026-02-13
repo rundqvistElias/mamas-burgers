@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Example</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#menu" class="menu">MENU</a>
+        <!-- <a href="#" class="">PRESENTKORT</a> -->
+        <a href="" class="logo"
+          ><img class="logo-wrapper" src="assets/burgerfile.png" alt=""
+        /></a>
+        <a href="#opening-hours" class="lunch">ÖPPETTIDER</a>
+        <!-- <a href="#" class="table">BOKA BORD</a> -->
+      </div>
+    </nav>
+
+    <section class="hero">
+      <video
+        id="heroVideo"
+        autoplay
+        muted
+        playsinline
+        loop
+        poster="hero-fallback.png"
+      >
+        <source src="assets/burgerVideo.mp4" type="video/mp4" />
+      </video>
+
+      <div class="hero-content">
+        <h1>
+          <div>ENJOY</div>
+          FOOD AND BEVERAGES
+        </h1>
+        <p>
+          Njut av klassiska amerikanska burgare och pizzor gjorda från grunden
+          av närproducerade råvaror i den ljuvliga trädgården.
+        </p>
+        <button class="cta">
+          <a href="#news">NYHETER</a>
+        </button>
+      </div>
+    </section>
+
+    <section class="content" id="news">
+      <h2 class="menu-master">NYHETER</h2>
+      <div class="food-info">
+        <div class="food-info-column">
+          <div class="icon-container">
+            <img src="assets/burgerCartoon.jpg" alt="Burger Icon" />
+          </div>
+          <p>
+            THE BURGER. Klassisk amerikansk burgare lagad från grunden på
+            närproducerade råvaror
+          </p>
+        </div>
+
+        <div class="food-info-column">
+          <div class="icon-container">
+            <img src="assets/pizzaCartoon.png" alt="Pizza Icon" />
+          </div>
+          <p>
+            THE PIZZA. Stenugnsbakad pizza med krispig botten och fylliga smaker
+            inspirerade av Italien. Tradition möter kvalitet i varje tugga.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content" id="menu">
+      <div class="menu-frame">
+        <section class="menu-master-section">
+          <div class="menu-section">
+            <h2 class="menu-header-one">Burgers</h2>
+            <div class="rule-line"></div>
+
+            <div class="menu-item">
+              <div class="menu-header">
+                <h3>Mama’s Single <span>(1 x 140 g)</span></h3>
+                <span class="price">120 kr</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-header">
+                <h3>Mama’s Double <span>(2 x 140 g)</span></h3>
+                <span class="price">155 kr</span>
+              </div>
+              <p class="description">
+                Burgarna serveras med bröd, 100% nötkött, dressing, sallad,
+                tomat, cheddarost, karamelliserad lök, färsk rödlök & inlagd
+                gurka.
+              </p>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-header">
+                <h3>Mama’s Candy Bacon <span>(1 x 140 g)</span></h3>
+                <span class="price">140 kr</span>
+              </div>
+              <p class="description">
+                Serveras med bröd, 100% nötkött, dressing, sallad, tomat,
+                cheddarost, karamelliserad lök/bacon, färsk rödlök & inlagd
+                gurka.
+              </p>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-header">
+                <h3>Lena’s Vegas (Vegetarisk) <span>(140 g)</span></h3>
+                <span class="price">120 kr</span>
+              </div>
+              <p class="description">
+                Burgare gjord på kikärter, kidneybönor, lök, morot,
+                palsternacka, vitlök, potatis & ströbröd. Serveras med ovan
+                tillbehör.
+              </p>
+            </div>
+          </div>
+
+          <!-- American Pizza – Left Leaning -->
+          <div class="menu-section">
+            <h2 class="menu-header-one">American Pizza Slices & Hotdogueros</h2>
+            <div class="rule-line"></div>
+
+            <div class="menu-item">
+              <div class="menu-header">
+                <h3>Classic Slice</h3>
+                <span class="price">60 kr</span>
+              </div>
+              <p class="description">Tomat, ost, skinka</p>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-header">
+                <h3>Pepperoni Slice</h3>
+                <span class="price">60 kr</span>
+              </div>
+              <p class="description">Tomat, ost, pepperoni</p>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-header">
+                <h3>Coleslaw Hotdogueros</h3>
+                <span class="price">40 kr</span>
+              </div>
+              <p class="description">
+                120 g vildsvinskorv med ost & bacon, korvbröd, fresh coleslaw,
+                ranchdressing, rostad & färsk lök.
+              </p>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-header">
+                <h3>Candy Bacon Hotdogueros</h3>
+                <span class="price">50 kr</span>
+              </div>
+              <p class="description">
+                120 g vildsvinskorv med ost & bacon, fresh coleslaw,
+                ranchdressing, rostad & färsk lök toppad med extra ost samt
+                karamelliserat bacon.
+              </p>
+            </div>
+          </div>
+
+          <!-- Side Orders – Left Leaning -->
+          <div class="menu-section left">
+            <h2 class="menu-header-one">Side Orders</h2>
+            <div class="rule-line"></div>
+
+            <div class="menu-item">
+              <div class="menu-header">
+                <h3>Good Ol’ Majo</h3>
+                <span class="price">25 kr</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-header">
+                <h3>Garlic Dip</h3>
+                <span class="price">25 kr</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-header">
+                <h3>Béarnaise</h3>
+                <span class="price">25 kr</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-header">
+                <h3>Fresh Coleslaw</h3>
+                <span class="price">25 kr</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-header">
+                <h3>Dill Crispy French Fries</h3>
+                <span class="price">25 kr</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-header">
+                <h3>Crispy French Fries</h3>
+                <span class="price">25 kr</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-section left">
+            <h2 class="menu-header-one">Ice Cream</h2>
+            <div class="rule-line"></div>
+
+            <div class="menu-item">
+              <div class="menu-header">
+                <h3>Ordinary</h3>
+                <span class="price">30 kr</span>
+              </div>
+              <p class="description">
+                Gräddglass med vaniljsmak, jordgubbssylt & kakaodoppad i båtrån.
+              </p>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-header">
+                <h3>Summer</h3>
+                <span class="price">30 kr</span>
+              </div>
+              <p class="description">
+                Gräddglass med citrus/jordgubb & fläder i båtrån.
+              </p>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-header">
+                <h3>Mini Chocolate</h3>
+                <span class="price">20 kr</span>
+              </div>
+              <p class="description">
+                Glasstrut med chokladsmak, toppad kakaoglasyr & riven mörk
+                choklad.
+              </p>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-header">
+                <h3>Piggelin</h3>
+                <span class="price">20 kr</span>
+              </div>
+              <p class="description">Isglass med tuttifrutti-smak.</p>
+            </div>
+
+            <p class="allergy-note">
+              Vid allergi, fråga oss om innehållet i maten!
+            </p>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="opening-hours" id="opening-hours">
+      <div class="opening-container">
+        <h2 class="section-title">ÖPPETTIDER</h2>
+        <div class="rule-line"></div>
+
+        <div class="hours-list">
+          <div class="hours-row">
+            <span class="day">Måndag</span>
+            <span class="time">Stängt</span>
+          </div>
+
+          <div class="hours-row">
+            <span class="day">Tisdag – Torsdag</span>
+            <span class="time">11:00 – 21:00</span>
+          </div>
+
+          <div class="hours-row">
+            <span class="day">Fredag</span>
+            <span class="time">11:00 – 23:00</span>
+          </div>
+
+          <div class="hours-row">
+            <span class="day">Lördag</span>
+            <span class="time">12:00 – 23:00</span>
+          </div>
+
+          <div class="hours-row">
+            <span class="day">Söndag</span>
+            <span class="time">12:00 – 20:00</span>
+          </div>
+        </div>
+
+        <p class="hours-note">
+          Helgdagar kan avvika – följ oss på sociala medier för uppdateringar.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
